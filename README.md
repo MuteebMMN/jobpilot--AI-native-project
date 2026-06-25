@@ -1,63 +1,296 @@
-JobPilot 
-JobPilot is an AI-native job hunting and automation assistant designed to streamline the entire job application lifecycle. By leveraging specialized AI agents and deeply integrated context systems, JobPilot continuously discovers matching positions, provides direct profile-to-job matching scores, and runs autonomous browser-based deep research on target companies.
+#  AI Job Pilot
 
- Core Features
-1. AI-Native Architecture & Skills
-Built from the ground up to be AI-native, JobPilot divides complex developer and user tasks into specialized agentic modules:
+AI Job Pilot is an AI-native career assistant designed to help job seekers optimize their profiles, build professional resumes, research companies, and streamline their job search journey.
 
-Custom Skills: Utilizes targeted Claude skills (such as architect, imprint, recover, remember, and review) alongside frontend styling patterns (as seen in image_326620.png).
+The platform combines AI agents, browser-based company research, resume intelligence, and analytics to provide users with a complete job search copilot experience.
 
-Deep Context System: Keeps agents fully aligned with the application state via robust markdown-based configuration maps covering architecture, progress tracking, code standards, and UI tokens (as shown in image_326644.png).
+---
 
-2. Resume Parsing & Profile Auto-Fill
-Auto-Fill from Resume: Upload your resume to extract structural details and instantly complete your personal information profile (image_3262c2.png).
+##  Overview
 
-Reverse Sync: Update your profile fields manually within the clean web dashboard and instantly generate or tailor a fresh resume document matching your updated details.
+Finding the right job involves much more than submitting applications. Candidates need strong profiles, tailored resumes, company insights, and a structured approach to job searching.
 
-3. Intelligent Job Matching
-Filter, search, and aggregate jobs by title or location across extensive indexes (image_3262e1.jpg).
+AI Job Pilot acts as a personal AI career assistant by helping users:
 
-AI Match Reasoning: View instant match scores alongside an itemized breakdown of technical skills you have vs. skills you need to develop for specific roles (image_326317.jpg).
+- Build and enhance professional profiles
+- Generate resumes from profile data
+- Extract profile information from existing resumes
+- Research companies before applying
+- Track job search activities
+- Receive AI-powered career assistance
 
-4. Autonomous Company Research
-Dive deeper than standard job descriptions.
+---
 
-Browser-Based Research: The agent autonomously navigates and extracts tech stacks, culture overviews, interview prep notes, and personalized talking points tailored specifically to your background (image_326320.jpg).
+## Features
 
-5. Centralized Data Dashboard
-Track total jobs found, average application match rates, and real-time research pipelines.
+### Authentication & User Management
 
-Built-in interactive metrics show your personal Match Score Distribution and Jobs Found Over Time (image_326359.jpg).
+- Secure user authentication
+- User onboarding and profile creation
+- Personalized dashboard experience
 
- Tech Stack & Integrations
-Core Interface: Clean, highly scannable modern web dashboard layout (image_32629f.jpg).
+### Resume Intelligence
 
-Authentication: Secure user login and authorization managed via  Clerk / Infisical / NextAuth (referenced as isnfoge auth wrapper).
+- Upload an existing resume
+- Extract profile information automatically
+- Generate resumes from profile data
+- Keep resumes synchronized with profile updates
 
-Analytics: Real-time user behavior tracking and conversion flow performance maps powered by PostHog.
+### AI-Powered Profile Builder
 
-AI Foundations: Specialized system agents executing via Claude-powered contextual engines.
+Users can:
 
- Repository Breakdown
-Agent Skills Configuration
-As visualized in image_326620.png, the backend system features a core modular skills layout:
+- Create profiles from scratch
+- Populate profiles using uploaded resumes
+- Edit and improve profile information
+- Maintain a centralized professional identity
 
-Plaintext
-.agents/
-└── skills/
-    ├── architect/
-    ├── imprint/
-    ├── recover/
-    ├── remember/
-    ├── review/
-    └── tailwind-css-patterns/
-Context Engine
-As visualized in image_326644.png, systemic context is maintained via flat structural files keeping agents structurally constrained:
+### Company Research
 
-Plaintext
-context/
-├── architecture.md
-├── build-plan.md
-├── code-standards.md
-├── progress-tracker.md
-└── ui-registry.md
+Before applying, users can research companies directly inside the platform.
+
+The AI agent gathers:
+
+- Company overview
+- Industry information
+- Business model
+- Company size
+- Key products and services
+- Hiring insights
+- Relevant company information
+
+###  Job Search Assistant
+
+- Search and explore job opportunities
+- Access company details while reviewing jobs
+- Make informed application decisions
+- Organize job search activities
+
+### Analytics
+
+Integrated analytics provide insights into:
+
+- User activity
+- Feature usage
+- Platform engagement
+- Product performance
+
+Powered by PostHog.
+
+---
+
+## Architecture
+
+```text
+                    User
+                      │
+                      ▼
+              Authentication Layer
+                      │
+                      ▼
+                AI Job Pilot
+                      │
+      ┌───────────────┼────────────────┐
+      │               │                │
+      ▼               ▼                ▼
+ Profile Agent   Resume Agent   Research Agent
+      │               │                │
+      ▼               ▼                ▼
+ Profile Data    Resume Parsing   Company Research
+      │               │                │
+      └───────────────┼────────────────┘
+                      ▼
+                 User Dashboard
+                      │
+                      ▼
+                Analytics Layer
+```
+
+---
+
+##  AI Agent Capabilities
+
+The platform leverages multiple AI agents and Claude-powered skills to perform specialized tasks.
+
+### Profile Agent
+
+- Creates professional profiles
+- Enhances user information
+- Structures career data
+
+### Resume Agent
+
+- Extracts data from uploaded resumes
+- Generates resumes from profile information
+- Updates resume content dynamically
+
+### Research Agent
+
+- Performs browser-based company research
+- Collects relevant company insights
+- Summarizes business information
+
+### Job Search Agent
+
+- Assists users during job exploration
+- Provides contextual company information
+- Improves decision-making during applications
+
+---
+
+## Tech Stack
+
+| Category | Technology |
+|-----------|------------|
+| Frontend | Next.js |
+| Backend | AI Native Architecture |
+| Authentication | Clerk / Authentication Service |
+| AI Models | Claude |
+| Resume Processing | AI Extraction Pipeline |
+| Company Research | Browser-Based Research Agent |
+| Analytics | PostHog |
+| Database | Database Service |
+| Deployment | Cloud Infrastructure |
+
+---
+
+##  Core Functionalities
+
+### Resume → Profile
+
+Users can upload a resume and automatically extract:
+
+- Personal information
+- Work experience
+- Skills
+- Education
+- Certifications
+
+---
+
+### Profile → Resume
+
+Users can generate professional resumes directly from their profile data.
+
+Benefits:
+
+- Faster resume creation
+- Consistent information
+- Easy updates
+- Reduced manual work
+
+---
+
+### Company Intelligence
+
+The platform helps users understand companies before applying by providing:
+
+- Company summaries
+- Industry details
+- Products and services
+- Hiring context
+- Business information
+
+---
+
+### Dashboard
+
+The dashboard provides a centralized workspace containing:
+
+- Profile information
+- Resume management
+- Company research
+- Job search tools
+- Activity insights
+
+---
+
+## Key Benefits
+
+- Save time during job applications
+- Build stronger professional profiles
+- Generate resumes instantly
+- Research companies efficiently
+- Make data-driven career decisions
+- Centralize the entire job search process
+
+---
+
+## Future Enhancements
+
+- AI-generated cover letters
+- Interview preparation assistant
+- Application tracking system
+- Job matching recommendations
+- Personalized career insights
+- Multi-language support
+- LinkedIn profile optimization
+- Salary intelligence
+
+---
+
+## Use Cases
+
+### Job Seekers
+
+- Create professional profiles
+- Build resumes quickly
+- Research employers
+- Manage job searches
+
+### Career Switchers
+
+- Identify transferable skills
+- Generate updated resumes
+- Explore new industries
+
+### Students & Graduates
+
+- Create first professional resume
+- Research employers
+- Prepare for applications
+
+---
+
+## AI Concepts Demonstrated
+
+- Agentic AI Systems
+- Claude Skills Integration
+- Context-Aware AI Agents
+- Resume Information Extraction
+- Structured Data Generation
+- Browser-Based Research Agents
+- AI Workflow Orchestration
+- User Personalization
+- Analytics Integration
+
+---
+
+## Analytics
+
+The application uses PostHog for:
+
+- Product analytics
+- User behavior tracking
+- Feature adoption monitoring
+- Performance insights
+
+---
+
+## Portfolio Highlights
+
+This project showcases experience with:
+
+- AI-Native Application Development
+- Agentic AI Workflows
+- Claude-Powered AI Systems
+- Authentication & User Management
+- Resume Intelligence
+- Company Research Automation
+- Analytics Integration
+- Full-Stack Product Development
+
+---
+
+
+# If you found this project useful, consider giving it a star!
