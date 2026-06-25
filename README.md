@@ -205,53 +205,6 @@ The dashboard provides a centralized workspace containing:
 
 ---
 
-## Key Benefits
-
-- Save time during job applications
-- Build stronger professional profiles
-- Generate resumes instantly
-- Research companies efficiently
-- Make data-driven career decisions
-- Centralize the entire job search process
-
----
-
-## Future Enhancements
-
-- AI-generated cover letters
-- Interview preparation assistant
-- Application tracking system
-- Job matching recommendations
-- Personalized career insights
-- Multi-language support
-- LinkedIn profile optimization
-- Salary intelligence
-
----
-
-## Use Cases
-
-### Job Seekers
-
-- Create professional profiles
-- Build resumes quickly
-- Research employers
-- Manage job searches
-
-### Career Switchers
-
-- Identify transferable skills
-- Generate updated resumes
-- Explore new industries
-
-### Students & Graduates
-
-- Create first professional resume
-- Research employers
-- Prepare for applications
-
----
-
 ## AI Concepts Demonstrated
 
 - Agentic AI Systems
@@ -266,16 +219,6 @@ The dashboard provides a centralized workspace containing:
 
 ---
 
-## Analytics
-
-The application uses PostHog for:
-
-- Product analytics
-- User behavior tracking
-- Feature adoption monitoring
-- Performance insights
-
----
 
 ## Portfolio Highlights
 
