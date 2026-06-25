@@ -19,6 +19,9 @@ AI Job Pilot acts as a personal AI career assistant by helping users:
 - Track job search activities
 - Receive AI-powered career assistance
 
+  <img width="1421" height="861" alt="image" src="https://github.com/user-attachments/assets/be17e42f-d2c0-4831-960f-8e0bfcbf53fa" />
+
+
 ---
 
 ## Features
@@ -45,6 +48,9 @@ Users can:
 - Edit and improve profile information
 - Maintain a centralized professional identity
 
+  <img width="1348" height="859" alt="image" src="https://github.com/user-attachments/assets/ea7368cd-052e-4e5f-863b-303eef843655" />
+
+
 ### Company Research
 
 Before applying, users can research companies directly inside the platform.
@@ -58,6 +64,8 @@ The AI agent gathers:
 - Key products and services
 - Hiring insights
 - Relevant company information
+  <img width="925" height="786" alt="image" src="https://github.com/user-attachments/assets/798c61cc-b6a6-48be-977c-c014c4183c60" />
+
 
 ###  Job Search Assistant
 
@@ -65,6 +73,9 @@ The AI agent gathers:
 - Access company details while reviewing jobs
 - Make informed application decisions
 - Organize job search activities
+
+  <img width="1392" height="855" alt="image" src="https://github.com/user-attachments/assets/4894b6d6-52f6-4f0d-aa0d-3fdb80395c59" />
+
 
 ### Analytics
 
@@ -76,6 +87,9 @@ Integrated analytics provide insights into:
 - Product performance
 
 Powered by PostHog.
+
+<img width="1378" height="855" alt="image" src="https://github.com/user-attachments/assets/c3c2fde4-0225-4690-96a1-899d044af5ea" />
+
 
 ---
 
